@@ -4,6 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
+  "debug.inlineValues": "off",
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
   "python.analysis.extraPaths": [

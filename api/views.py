@@ -16,7 +16,8 @@ def clientes_list(request):
 
 @api_view(["POST"])
 def get_cliente(request):
-    clienteX = next((c for c in clientes if c["id"] == request.data.get("id")), None)
+    cliente_id = int(request.data.get("id", 0))
+    clienteX = next((c for c in clientes if c["id"] == cliente_id), None)
 
     if clienteX is None:
         return Response(
