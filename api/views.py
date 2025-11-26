@@ -3,9 +3,24 @@ from rest_framework.response import Response
 from rest_framework import status
 
 clientes = [
-    {"id": 1, "nombre": "Juan Pérez", "email": "juan@example.com"},
-    {"id": 2, "nombre": "Ana López", "email": "ana@example.com"},
-    {"id": 3, "nombre": "Carlos Ruiz", "email": "carlos@example.com"},
+    {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "email": "juan@example.com",
+        "occupation": {"id": 22, "name": "Engineer"},
+    },
+    {
+        "id": 2,
+        "nombre": "Ana López",
+        "email": "ana@example.com",
+        "occupation": {"id": 33, "name": "Architect"},
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos Ruiz",
+        "email": "carlos@example.com",
+        "occupation": {"id": 22, "name": "Engineer"},
+    },
 ]
 
 
